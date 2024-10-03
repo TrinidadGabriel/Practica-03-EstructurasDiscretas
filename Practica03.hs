@@ -12,3 +12,21 @@ estaContenido Void y = False
 estaContenido (Node x xs) elemento= if elemento == x
                                         then True
                                         else estaContenido xs elemento
+
+--Convertir una lista de haskell a nuestra nueva estructura de lista:--
+
+
+---Convertir nuestra nueva estructura de lista a una lista ya definida en haskell---
+convertirALista :: List a -> [a]
+convertirALista Void = []
+convertirALista (Node a lista) = a : convertirALista lista
+
+--Convertir en un conjunto nuestra nueva estructura de lista:--
+
+--Eliminar un elemento en un ındice espec ́ıfico.:--
+eliminarIndice :: List a -> Int -> List a
+eliminarIndice Void indice = error "No existe indice en la lista vacia"
+eliminarIndice (Node a lista) indice = if indice == 0
+                                            then lista
+                                            else Node a (eliminarIndice lista  ( 
+                                                indice + 1 ))
