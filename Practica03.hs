@@ -30,7 +30,7 @@ conjunto (Node x lista) = if estaContenido lista x
                             then conjunto lista
                             else Node x (conjunto lista)
 
---Eliminar un elemento en un  ́ındice espec ́ıfico.--
+--Eliminar un elemento en un índice específico.--
 eliminarIndice :: List a -> Int -> List a
 eliminarIndice Void indice = error "No existe indice en la lista vacia"
 eliminarIndice (Node a lista) indice = if indice < 0 || indice > longitud (Node a lista) - 1
