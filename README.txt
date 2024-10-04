@@ -1,4 +1,4 @@
 Practica de Laboratorio 3
 Integrantes:
--Trinidad Camcho Gabriel
+-Trinidad Camacho Gabriel
 -Vazquez Serralta Alan
