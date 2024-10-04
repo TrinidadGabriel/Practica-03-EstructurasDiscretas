@@ -37,7 +37,7 @@ insertarIndice Void indice x = if indice /= 0
                                 then error "El indice esta fuera de la lista"
                                 else if indice == 0 
                                 then (Node x Void)
-                                else error "El indice excede la longitud de la lista"
+                                else error "El indice esta fuera de la lista"
 insertarIndice  (Node a lista) indice x = if indice < 0 || indice > longitud (Node a lista) 
                                             then error "El indice excede la longitud de la lista"
                                             else if indice == 0
